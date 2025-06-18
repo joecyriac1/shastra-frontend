@@ -1,0 +1,43 @@
+
+.workshops-page {
+    padding: 20px; 
+}
+
+.workshops-intro-text {
+    text-align: center;
+    font-size: 1.15rem;
+    color: var(--secondary-color);
+    max-width: 800px;
+    margin: -20px auto 40px auto; 
+    line-height: 1.8;
+}
+
+.workshops-grid-container {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px; 
+    justify-content: center;
+    padding: 20px 0;
+}
+
+
+@media (max-width: 768px) {
+    .workshops-grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+        gap: 30px;
+    }
+    .workshops-intro-text {
+        font-size: 1rem;
+        margin: -10px auto 30px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .workshops-grid-container {
+        grid-template-columns: 1fr; 
+        gap: 25px;
+    }
+    .workshops-intro-text {
+        padding: 0 10px;
+    }
+}
