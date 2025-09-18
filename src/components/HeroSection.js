@@ -55,7 +55,7 @@ export default function Hero() {
         </div>
 
         <div className="hero-media" aria-hidden>
-          {/* Replace src with a short looping MP4/GIF of the UI — small file under 1MB */}
+         
           <video
             className="demo-video"
             autoPlay
@@ -70,3 +70,5 @@ export default function Hero() {
     </header>
   );
 }
+
+
